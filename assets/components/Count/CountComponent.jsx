@@ -62,7 +62,7 @@ export default function Count() {
                 </TouchableHighlight>
                 <TouchableHighlight
                     style={[styles.touchableContainer, styles.refreshButton]}
-                    onPress={() => setCount(prev => prev - 1)}
+                    onPress={() => setCount(() => 0)}
                     underlayColor='rgba(175, 175, 175, 1)'
                 >
                     <View
